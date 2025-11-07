@@ -50,8 +50,8 @@ jobs:
 
 
       # (Opsional) Reload Nginx kalau kamu ingin pasti refresh log/permision
-      - name: Reload Nginx
-        run: |
-          ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.SSH_PORT }} \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
-            "sudo nginx -t && sudo systemctl reload nginx"
+      # - name: Reload Nginx
+      #   run: |
+      #     ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.SSH_PORT }} \
+      #       ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+      #       "sudo nginx -t && sudo systemctl reload nginx"
