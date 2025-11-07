@@ -44,8 +44,10 @@ jobs:
       - name: Rsync dist -> server
         run: |
           sudo apt-get update && sudo apt-get install -y rsync
-          rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.SSH_PORT }}" \
-            dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:"${{ secrets.REMOTE_PATH }}/"
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.SSH_PORT }}" \
+            dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/yogasungkowo/Project/webdev_portfolio/dist/
+
 
       # (Opsional) Reload Nginx kalau kamu ingin pasti refresh log/permision
       - name: Reload Nginx
