@@ -21,150 +21,70 @@ const splashScreen = true // recommended: for best behavior after refresh
 // --- 👋 Greeting Section ---
 const greeting = {
     intro: "Hello 👋, my name is",
-    name: "Maxim Shelepov",
+    name: "Prayoga Sungkowo",
     // og: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
-    message: "Previously a computer science senior, a web developer for my university, and founder of an AI tool for college students. Now working at IBM as a software developer.",
-    basedLocation: "Austin, TX (USA)",
-    resumeLink: "https://drive.google.com/file/d/1BEiPuAOCQPWc1RVN5Bn_7KyxhR0HL_bv/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
+    message: "Previously worked as Software Engineer intern at PT Perkebunan Nusantara IV, based in Medan, Indonesia. Currently, I'm working as a freelancer and looking for new opportunities.",
+    basedLocation: "Medan, Indonesia",
+    resumeLink: "https://drive.google.com/file/d/1do5XagZ5Hmb4porbzoQ6dtLg0mC0Aarp/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
     },
-    portraitLink: 'images/recentportrait.png'
+    portraitLink: 'images/recentPotrait.jpeg'
 }
 
 const socialMediaLinks = {
-    github: "https://github.com/mimaishel",
-    linkedin: "https://www.linkedin.com/in/maxim-shelepov1",
-    medium: "https://medium.com/@mimaishel",
+    github: "https://github.com/yogasungkowo",
+    linkedin: "https://www.linkedin.com/in/prayoga-sungkowo",
+    medium: "",
     stackoverflow: "",
-    xtwitter: "https://twitter.com/mimaishel"
+    xtwitter: ""
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "My name is Maxim Shelepov, a software engineer and simply an engineer, currently working at IBM based in Austin, TX. I have a knack for solving problems and creating impactful software solutions. While in college, I worked as a web developer for my university's IT team, gaining extensive experience in industry-grade software and advanced app development practices.",
-        "Nowadays working on next-generation AI products and enterprise software solutions."
+        "I’m Prayoga Sungkowo, a Fullstack Web Developer based in Medan, Indonesia. I specialize in Laravel, JavaScript, and DevOps with experience in CI/CD, Docker, and Cloudflare Tunnel. I’ve built systems like Kasirku 3RPonsel and PalmViews, focusing on performance, scalability, and data visualization. Currently, I’m exploring AI and cloud technologies to create smarter, more efficient web solutions.",
     ], // Separated items are paragraphs
     techStack: [
+        "Laravel",
         "JavaScript",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "Vue.js",
-        "Python"
+        "Vue JS",
+        "Python",
+        "Docker",
+        "Cloudflare"
     ],
-    photo1Link: "images/portrait1.jpeg",
-    photo2Link: "images/portrait2.jpeg",
-    photo3Link: "images/portrait3.jpeg"
+    photo1Link: "images/potrait1.jpg",
+    photo2Link: "images/potrait2.jpg",
+    photo3Link: "images/potrait3.png"
 }
 
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
-        position: "Software Developer",
+        position: "Software Engineer",
         company: {
-            name: "IBM",
-            link: "https://ibm-zcouncil.com/venues/ibm-office-austin-tx/"
+            name: " PT Perkebunan Nusantara IV",
+            link: "http://www.ptpn4.co.id/id"
         },
-        duration: "May 2025 - Present",
+        duration: "Oct 2024 - Jun 2025",
         content: [
             {
                 sectionHeader: "",
                 bulletPoints: [
-                    "Building next-generation AI products and enterprise software solutions.",
+                    "Built and maintained internal web applications using Laravel, enhancing operational efficiency across departments.",
                 ]
             }
-        ],
-        hashtags: [
-            "JavaScript",
-            "TypeScript",
-            "React.js",
-            "Vue.js",
-            "Node.js",
-            "HTML",
-            "CSS",
-            "Sass",
-        ]
-    },
-    {
-        position: "Founder & Software Developer",
-        company: {
-            name: "EduVaultAI",
-            link: "https://blog.eduvaultai.com"
-        },
-        duration: "July 2024 - April 2025",
-        content: [
-            {
-                sectionHeader: "",
-                bulletPoints: [
-                    "Engineered a high-performance RESTful API backend with FastAPI, supporting a student dashboard and file management system for 5,000+ concurrent users, with files hosted on AWS S3.",
-                    "Containerized MariaDB, ChromaDB, and Llama model instances using Docker, enabling scalable and maintainable backend infrastructure.",
-                    "Automated test data generation using Python, creating 60,000 records/files in 4 min to streamline testing.",
-                    "Architected a scalable backend infrastructure capable of 2x future workloads with minimal code refactoring.",
-                    "Developed responsive UI components in Vue.js and Tailwind.css, reducing backend load by optimizing API calls.",
-                    "Led an Agile (Kanban) team creating milestone-based roadmaps and schedule, engaging in bug reporting, code reviews, maintaining documentation.",
-                    "Estimated compute and hosting costs, gathering user analytics to scale platform accordingly."
-                ]
-            }
-        ],
-        hashtags: [
-            "JavaScript",
-            "TypeScript",
-            "React.js",
-            "Vue.js",
-            "Node.js",
-            "HTML",
-            "CSS",
-            "Sass",
-        ]
-    },
-    {
-        position: "Web Dev Intern",
-        company: {
-            name: "WolfTech",
-            link: "https://tools.wolftech.ncsu.edu/support/index.php/WolfTech_Information_Technology"
-        },
-        duration: "Aug 2022 - Aug 2024",
-        content: [
-            {
-                sectionHeader: ["Williamboard Project - Solo Full-Stack Developer", "May 2023 - July 2024"],
-                bulletPoints: [
-                    "Laid the groundwork for a multi-tenant modern digital sign management system for 360 screens across 50 campus organizations using Laravel, Vue.js, and Inertia.js.",
-                    "Designed MySQL database and Event-Driven app architecture to work with modern PHP and JS technologies.",
-                    "Implemented a tenant permission-based system supporting 5 distinct user roles and organization-specific access.",
-                    "Configured WebSocket's API to collect screen data and display analytics on user-facing dashboards.",
-                    "Automated data migration of 15,000 records to new database structure in under 5 min using custom scripts.",
-                ]
-            },
-            {
-                sectionHeader: ["Other Contributions", "Aug 2022 - May 2023"],
-                bulletPoints: [
-                    "Created an AI-driven LinkedIn post generator, integrating user profiles and files for personalized content.",
-                    "Built a search tool for 20,000 circuit design kits using PHP and SQL, achieving a 200ms average response time.",
-                    "Maintained and debugged email automation, research discovery, and scheduling apps, solving 10+ client issues.",
-                    "Mentored and assisted new interns into the team workflow shortening the onboarding period.",
-                ]
-            },
-            // "Laid the groundwork for a multi-tenant modern digital sign management system for 360 screens across 50 campus organizations using Laravel, Vue.js, and Inertia.js.",
-            // "Designed MySQL database and Event-Driven app architecture to work with modern PHP and JS technologies.",
-            // "Implemented a tenant permission-based system supporting 5 distinct user roles and organization-specific access.",
-            // "Configured WebSocket's API to collect screen data and display analytics on user-facing dashboards.",
-            // "Automated data migration of 15,000 records to new database structure in under 5 min using custom scripts.",
-            // "Created an AI-driven LinkedIn post generator, integrating user profiles and files for personalized content.",
-            // "Built a search tool for 20,000 circuit design kits using PHP and SQL, achieving a 200ms average response time.",
-            // "Maintained and debugged email automation, research discovery, and scheduling apps, solving 10+ client issues.",
-            // "Mentored and assisted new interns into the team workflow shortening the onboarding period.",
         ],
         hashtags: [
             "Laravel",
             "PHP",
             "MySQL",
-            "JS",
-            "Vue.js",
+            "PostgreSQL",
+            "JavaScript",
             "HTML",
-            "Tailwind"
+            "CSS",
+            "Bootstrap"
         ]
     },
     // {
@@ -190,153 +110,83 @@ const experiences = [
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "Tiny React Toolbox",
-        yearCompleted: "2025",
-        description: "Developed a tiny open-source library of highly-reusable and malleable React components (+TS logic) for LAS public domain UI AI analytics project. Sections, toggleables, drop-downs, icons, graphs.",
-        techStack: "TS, React.js, Tailwind.css",
-        links: [
-            {
-                label: "",
-                type: "git",
-                url: "https://github.com/mimaishel/tiny-react-toolbox"
-            },
-        ],
-        imageLink: "images/las_dashboard_pic.png",
-        alignLeft: false
-    },
-    {
-        projectName: "EduVaultAI",
+        projectName: "PalmViews Analytics Dashboard",
         yearCompleted: "2024",
-        description: "Lead the backend and frontend development of a smart study tool transforming course notes into personalized practice exams and study guides.",
-        techStack: "Vue.js, JS, HTML, Tailwind.css, FastAPI, Python, MariaDB, Docker, Llama.ai",
+        description: "Built PalmViews analytics dashboard for palm oil management, providing real-time insights on yield, resources, and environmental data. Integrated interactive visualizations using Highcharts.js to support data-driven decisions.",
+        techStack: "PHP (Laravel), JavaScript (AJAX), MySQL, Highchart.js",
         links: [
             {
                 label: "",
                 type: "external",
-                url: "https://blog.eduvaultai.com"
-            }
+                url: "https://palmviews.my.id/"
+            },
         ],
-        imageLink: "images/eduvaultai_dash_pic.png",
+        imageLink: "images/palmvies.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Palmprotection Analytics Dashboard",
+        yearCompleted: "2025",
+        description: "Developed PalmProtection, a pest and fertilizer monitoring system for PTPN IV Regional II. Built with Laravel and PostgreSQL, the app enables supervisors to manage field reports, validate data, and monitor plantation health efficiently.",
+        techStack: "PHP (Laravel), JavaScript (AJAX), MySQL, Highchart.js",
+        links: [
+            {
+                label: "",
+                type: "external",
+                url: "https://protection.palmviews.my.id/"
+            },
+        ],
+        imageLink: "images/palmprotection.png",
         alignLeft: true
     },
     {
-        projectName: "Open-Source Developer Portfolio",
-        yearCompleted: "2023",
-        description: "Designed and developed an open-sourced single page application template to help web developers create visually appealing personal portfolios, focusing on ease of use and customization. Built with Vue.js, JS, HTML, Tailwind CSS, the project achieved 27 stars and 14 forks on GitHub.",
-        techStack: "Vue.js, JS, HTML, Tailwind.css",
+        projectName: "3R Ponsel Kasirku System",
+        yearCompleted: "2025",
+        description: "Developed 3R Ponsel Kasirku System, a mobile point-of-sale application for small retailers. Built with Laravel and MySQL, the app streamlines sales processes, inventory management, and customer engagement.",
+        techStack: "PHP (Laravel), JavaScript (AJAX), MySQL",
         links: [
             {
                 label: "",
-                type: "git",
-                url: "https://github.com/mimaishel/webdev_portfolio"
+                type: "external",
+                url: "https://3rponsel.prasunk.my.id/"
             },
+        ],
+        imageLink: "images/3rponsel.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Pokdarwis Landing Page",
+        yearCompleted: "2025",
+        description: "Developed Pokdarwis Landing Page, a promotional website for the Pokdarwis tourism group. Built with Laravel and Tailwind CSS, the site showcases local attractions, events, and services.",
+        techStack: "PHP (Laravel), JavaScript (AJAX), MySQL, Tailwind CSS, Alpine.js, Filament UI",
+        links: [
             {
                 label: "",
                 type: "external",
-                url: "https://maxshelepov.com"
-            }
+                url: "https://pokdarwismerdeka.org/"
+            },
         ],
-        imageLink: "images/webdevportfolio_pic.png",
+        imageLink: "images/pokdarwis.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Rumah Literasi Ranggi Website",
+        yearCompleted: "2025",
+        description: "Developed Rumah Literasi Ranggi Website, a platform to promote literacy and education in the community. Built with Laravel and Tailwind CSS, the site features educational resources, event information, and community engagement tools.",
+        techStack: "PHP (Laravel), JavaScript (AJAX), MySQL, Tailwind CSS, Alpine.js",
+        links: [
+            {
+                label: "",
+                type: "external",
+                url: "https://rumahliterasiranggi.id/"
+            },
+        ],
+        imageLink: "images/rumahliterasiranggi.png",
         alignLeft: false
     },
-    // {
-    //     projectName: "TrackYourSubs IOS App",
-    //     yearCompleted: "2022",
-    //     description: "An IOS app to track you subscriptions and expenses, all the while presenting in a clean and professional look with a load of features. Some of the more evident features are: Budgeting (monthly / yearly option available), Current monthly & yearly total expense at a glance, Custom suggestions to meet budget, Organize (Categorization & Importance) and filter through subscriptions, Reminders via scheduled notifications, Stats page: pie chart visual, bar chart visual, and streak indicator.",
-    //     techStack: "Swift, SwiftUI",
-    //     links: [
-    //         {
-    //             label: "",
-    //             type: "git",
-    //             url: "https://github.com/mimaishel/TrackYourSubsDemo/"
-    //         },
-    //         {
-    //             label: "",
-    //             type: "external",
-    //             url: "https://youtu.be/KsTx-F70OOk"
-    //         }
-    //     ],
-    //     imageLink: "images/tracksubs_pic.png",
-    //     alignLeft: false
-    // },
-    // {
-    //     projectName: "Personal Portfolio App",
-    //     yearCompleted: "2021",
-    //     description: "Built a dynamic, live-editable personal portfolio website with an admin dashboard for real-time updates. Developed using Django (Python) for the backend, and HTML, CSS, and JavaScript for the frontend, following the MVC architecture, which enhanced my full-stack development skills.",
-    //     techStack: "Django, Python, HTML, CSS, Bootstrap4, JS",
-    //     links: [
-    //         {
-    //             label: "",
-    //             type: "external",
-    //             url: "https://site--maximshelepov--6tkhqqjrq9c5.code.run"
-    //         }
-    //     ],
-    //     imageLink: "images/portfolio_pic.png",
-    //     alignLeft: true
-    // },
-    // {
-    //     projectName: "Sudoku Game & Solver",
-    //     yearCompleted: "2021",
-    //     description: "Built a Sudoku game UI incorporating the Java Swing library. Randomly generates a Sudoku puzzle and solves itself using the backtracking algorithm written in Java..",
-    //     techStack: "Java",
-    //     links: [
-    //         {
-    //             label: "",
-    //             type: "git",
-    //             url: "https://github.com/mimaishel/sudokusolver"
-    //         },
-    //         {
-    //             label: "",
-    //             type: "external",
-    //             url: "https://youtu.be/lXOjOrjf5hU"
-    //         }
-    //     ],
-    //     imageLink: "images/sudoku_pic.png",
-    //     alignLeft: false
-    // },
-    // {
-    //     projectName: "Trivia Quiz",
-    //     yearCompleted: "2020",
-    //     description: "Interested in taking a fun and interactive pop quiz? Using the HTML, CSS3, JavaScript, and jQuery I created a quiz that can be taken on numerous topics of your choice and gives instant feedback. The entire project is built mostly on JavaScript and all the functionality and events are controlled through functions such as ReadDisplay and Validate. The HTML portion of the online quiz only serves as the skeleton and template for elements that will be created via JS.",
-    //     techStack: "JS, HTML, CSS",
-    //     links: [
-    //         {
-    //             label: "",
-    //             type: "git",
-    //             url: "https://github.com/mimaishel/JS-API-Quiz"
-    //         },
-    //         {
-    //             label: "",
-    //             type: "external",
-    //             url: "https://codepen.io/Max_the_coder/pen/yLXZOYL" //https://codepen.io/Max_the_coder/pen/yLXZOYL
-    //         }
-    //     ],
-    //     imageLink: "images/trivia_pic.png",
-    //     alignLeft: true
-    // },
-    // {
-    //     projectName: "Coronavirus Report",
-    //     yearCompleted: "2020",
-    //     description: "Created a program that displays up-to-date COVID-19 data and shows results in a graphical / visual representation. Coded with the Python programming language and libraries such as Matplotlib, Requests, and CSV.",
-    //     techStack: "Python",
-    //     links: [
-    //         {
-    //             label: "",
-    //             type: "git",
-    //             url: "https://youtu.be/gw5kb1QKVp0"
-    //         },
-    //         {
-    //             label: "",
-    //             type: "external",
-    //             url: "https://github.com/mimaishel/Covid-Cases-Visual"
-    //         }
-    //     ],
-    //     imageLink: "images/covid_pic.png",
-    //     alignLeft: false
-    // }
 ]
 
-const archiveLink = "https://github.com/mimaishel?tab=repositories"
+const archiveLink = "https://github.com/yogasungkowo?tab=repositories"
 
 // --- 📭 Contact Section ---
 // 2 Options available - Choose 1
@@ -347,8 +197,8 @@ const contact = {
             "Reach out if you have any questions or want to collaborate on a project.",
         ], // paragraph breaks will be entered after each item,
         link: {
-            email: "mimaishel@gmail.com", // email takes precedance
-            other: "https://forms.gle/W3MswTKsPWMxEbn58"
+            email: "prayogasungkowo12@gmail.com", // email takes precedance
+            other: "https://www.linkedin.com/in/prayoga-sungkowo-2b4b25210a0b/" // any other link (linkedin, calendly, etc.)
         },
         responseTimeMessage: ""
     },
