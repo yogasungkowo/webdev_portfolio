@@ -10,10 +10,10 @@
                     </div>
                     <!-- Custom Logo -->
                     <div v-else>
-                        <div class="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
-                            <p>&#123;&#123;</p>
-                            <p class="text-5xl md:text-7xl" id="custom-logo">Prasunk</p>
-                            <p>&#125;&#125;</p>
+                        <div class="flex items-center space-x-1 md:space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                            <p class="text-sm md:text-base">&#123;&#123;</p>
+                            <p class="text-3xl md:text-5xl" id="custom-logo">Prasunk</p>
+                            <p class="text-sm md:text-base">&#125;&#125;</p>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,10 @@
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#experience-section">Experience</router-link>
                     </li>
-                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[125ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[115ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#skills-section">Skills</router-link>
+                    </li>
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[130ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#organisation-section">Organisation</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
@@ -71,6 +74,9 @@
                     </li>
                     <li>
                         <router-link class="block py-5  hover:text-link-color" to="/#experience-section">🛡️ Experience</router-link>
+                    </li>
+                    <li>
+                        <router-link class="block py-5  hover:text-link-color" to="/#skills-section">🚀 Skills</router-link>
                     </li>
                     <li>
                         <router-link class="block py-5  hover:text-link-color" to="/#organisation-section">🤝 Organisation</router-link>

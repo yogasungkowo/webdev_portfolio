@@ -89,6 +89,29 @@ const experiences = [
     },
 ]
 
+// --- 🚀 Skills Section ---
+const skills = [
+    { name: "Laravel" },
+    { name: "PHP" },
+    { name: "JavaScript" },
+    { name: "Vue.js" },
+    { name: "Python" },
+    { name: "Docker" },
+    { name: "MySQL" },
+    { name: "PostgreSQL" },
+    { name: "Git" },
+    { name: "Linux" },
+    { name: "Cloudflare" },
+    { name: "Bootstrap" },
+    { name: "Tailwind CSS" },
+    { name: "HTML5" },
+    { name: "CSS3" },
+    { name: "Node.js" },
+    { name: "GitHub" },
+    // Jika icon tidak ditemukan di simple-icons, tambahkan customIcon:
+    // { name: "Nama Tech", customIcon: "🎯" },
+]
+
 // --- 🤝 Organisation & Community Section ---
 const organisations = [
     {
@@ -254,6 +277,7 @@ export default {
     socialMediaLinks,
     about,
     experiences,
+    skills,
     organisations,
     works,
     archiveLink,
