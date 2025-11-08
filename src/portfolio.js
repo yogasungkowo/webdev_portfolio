@@ -64,7 +64,7 @@ const experiences = [
     {
         position: "Software Engineer",
         company: {
-            name: " PT Perkebunan Nusantara IV",
+            name: "PT Perkebunan Nusantara IV",
             link: "http://www.ptpn4.co.id/id"
         },
         duration: "Oct 2024 - Jun 2025",
@@ -87,24 +87,65 @@ const experiences = [
             "Bootstrap"
         ]
     },
-    // {
-    //     position: "Math Tutor",
-    //     company: {
-    //         name: "Mathnasium",
-    //         link: "https://www.mathnasium.com"
-    //     },
-    //     duration: "Jan 2022 - Aug 2022",
-    //     bulletPoints: [
-    //         "Provided math tutoring to students from elementary through high school, covering a range of topics from basic algebra to college-level calculus, using personalized teaching strategies.",
-    //         "Designed and directed individualized learning plans, tailoring math topics evaluation to enhance understanding and improve performance in their school math classes."
-    //     ],
-    //     hashtags: [
-    //         "Calc 1-2",
-    //         "Algebra 1-3",
-    //         "Discrete Math",
-    //         "Statistics"
-    //     ]
-    // }
+]
+
+// --- 🤝 Organisation & Community Section ---
+const organisations = [
+    {
+        position: "Lead Community Management",
+        organisation: {
+            name: "Developer Community U",
+            link: ""
+        },
+        duration: "Oct 2024 - May 2025",
+        activities: [
+            "Organized community events and workshops to promote tech education.",
+            "Facilitated online discussions and coding sessions for members.",
+        ],
+        hashtags: [
+            "Community",
+            "Volunteering"
+        ]
+    },
+    {
+        position: "Member",
+        organisation: {
+            name: "Google Developer Student Clubs",
+            link: "https://gdg.community.dev/gdg-medan/"
+        },
+        duration: "Jul 2024 - Oct 2024",
+        activities: [
+            "Join community events and workshops to enhance tech skills.",
+            "Participated in online discussions and coding sessions for members.",
+            "Know Google technologies and best practices through workshops and seminars.",
+        ],
+        hashtags: [
+            "Community",
+            "Volunteering",
+            "Google",
+            "Student"
+        ]
+    },
+    {
+        position: "Web Programming Division Lead",
+        organisation: {
+            name: "Cyber Security Community FIKTI UMSU",
+            link: ""
+        },
+        duration: "March 2023 - January 2024",
+        activities: [
+            "Led the web programming division, organizing workshops and training sessions on web development technologies.",
+            "Collaborated with other divisions to enhance the community's overall technical skills and knowledge.",
+            "Join events and CTF competitions to improve cybersecurity skills.",
+        ],
+        hashtags: [
+            "Community",
+            "Volunteering",
+            "Cybersecurity",
+            "Web Development"
+        ]
+    },
+    // Add more organisations here
 ]
 
 // --- 💻 Work Section ---
@@ -213,6 +254,7 @@ export default {
     socialMediaLinks,
     about,
     experiences,
+    organisations,
     works,
     archiveLink,
     contact
