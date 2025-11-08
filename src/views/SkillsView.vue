@@ -11,9 +11,9 @@
             <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white dark:from-slate-900 to-transparent z-10 pointer-events-none"></div>
             
             <!-- Scrolling container -->
-            <div class="flex gap-8">
-                <div class="flex gap-8 animate-scroll">
-                    <div v-for="(skill, index) in content" :key="`skill-1-${index}`" class="flex-shrink-0">
+            <div class="scroll-wrapper">
+                <div class="scroll-content">
+                    <div v-for="(skill, index) in content" :key="`skill-1-${index}`" class="skill-item">
                         <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-32 h-32">
                             <TechIcon v-if="!skill.customIcon" :name="skill.name" :fallback="skill.icon" class="mb-2" />
                             <div v-else class="text-4xl mb-2">{{ skill.customIcon }}</div>
@@ -21,8 +21,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-8 animate-scroll" aria-hidden="true">
-                    <div v-for="(skill, index) in content" :key="`skill-2-${index}`" class="flex-shrink-0">
+                <div class="scroll-content" aria-hidden="true">
+                    <div v-for="(skill, index) in content" :key="`skill-2-${index}`" class="skill-item">
                         <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-32 h-32">
                             <TechIcon v-if="!skill.customIcon" :name="skill.name" :fallback="skill.icon" class="mb-2" />
                             <div v-else class="text-4xl mb-2">{{ skill.customIcon }}</div>
@@ -55,25 +55,37 @@ let getImageUrl = (path) => {
 </script>
 
 <style scoped>
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(calc(-100% - 2rem));
-    }
-}
-
-.animate-scroll {
+.scroll-wrapper {
+    display: flex;
+    width: fit-content;
     animation: scroll 30s linear infinite;
 }
 
-.animate-scroll:hover {
+.scroll-wrapper:hover {
     animation-play-state: paused;
 }
 
+.scroll-content {
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+.skill-item {
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
-    .animate-scroll {
+    .scroll-wrapper {
         animation: none;
     }
 }
