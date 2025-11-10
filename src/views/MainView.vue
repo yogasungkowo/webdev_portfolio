@@ -45,6 +45,8 @@
 
 						<SkillsView :content="portfolio.skills" :transitions="portfolio.transitions" />
 
+						<CertificationsView :content="portfolio.certifications" :transitions="portfolio.transitions" />
+
 						<OrganisationView :content="portfolio.organisations" :transitions="portfolio.transitions" />
 
 						<WorkView :content="portfolio.works" :transitions="portfolio.transitions" />
@@ -78,6 +80,7 @@ import LandingView from './LandingView.vue'
 import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
 import SkillsView from './SkillsView.vue'
+import CertificationsView from './CertificationsView.vue'
 import OrganisationView from './OrganisationView.vue'
 import WorkView from './WorkView.vue'
 import ContactView from './ContactView.vue'

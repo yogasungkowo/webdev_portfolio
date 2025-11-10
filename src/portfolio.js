@@ -108,8 +108,43 @@ const skills = [
     { name: "CSS3" },
     { name: "Node.js" },
     { name: "GitHub" },
-    // Jika icon tidak ditemukan di simple-icons, tambahkan customIcon:
-    // { name: "Nama Tech", customIcon: "🎯" },
+    // If the icon is not available in simple-icons, add a customIcon:
+    // { name: "Tech Name", customIcon: "🎯" },
+]
+
+// --- 📜 Certifications Section ---
+const certifications = [
+    {
+        title: "Alibaba Cloud Certified Developer",
+        issuer: "Alibaba Cloud",
+        issueDate: "Jul 2024",
+        expiryDate: "Jul 2026",
+        credentialId: "ACCD0120030700011812",
+        image: "images/alibaba_cert.jpeg",
+        verifyLink: "",
+        skills: ["Alibaba Cloud", "Cloud Computing", "Development"]
+    },
+    {
+        title: "IBM Cloud Essentials",
+        issuer: "IBM",
+        issueDate: "Dec 2023",
+        expiryDate: "",
+        credentialId: "",
+        image: "images/ibm-cloud-essentials.2.png",
+        verifyLink: "https://www.credly.com/earner/earned/badge/ada4e4c4-a03e-4ae2-aeba-5bcad856594e",
+        skills: ["IBM Cloud", "Cloud Computing", "Essentials"]
+    },
+    {
+        title: "Asean Data Science Explorers - SAP Analytics Cloud & SAP Build Apps",
+        issuer: "ASEAN Foundation",
+        issueDate: "May 2024",
+        expiryDate: "",
+        credentialId: "3295.13/DSE/ASEAN/V/2024",
+        image: "images/ADSE.jpg",
+        verifyLink: "",
+        skills: ["Data Science", "SAP Analytics Cloud", "SAP Build Apps"]
+    },
+
 ]
 
 // --- 🤝 Organisation & Community Section ---
@@ -278,6 +313,7 @@ export default {
     about,
     experiences,
     skills,
+    certifications,
     organisations,
     works,
     archiveLink,
