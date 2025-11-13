@@ -15,8 +15,8 @@
             <span class="font-semibold">Credential ID:</span> {{ certification.credentialId }}
         </div>
         
-        <!-- Image Section - Below description -->
-        <div class="mb-4 cursor-pointer" @click="openImage">
+        <!-- Image Section - Below description (only if image exists) -->
+        <div v-if="certification.image" class="mb-4 cursor-pointer" @click="openImage">
             <div class="w-64 h-40 overflow-hidden rounded-md bg-slate-100 dark:bg-slate-700 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <img 
                     :src="getImageUrl(certification.image)" 
@@ -46,11 +46,11 @@
         </div>
     </div>
 
-    <!-- Lightbox Modal -->
+    <!-- Lightbox Modal (only if image exists) -->
     <Teleport to="body">
         <Transition name="fade">
             <div 
-                v-if="showLightbox" 
+                v-if="showLightbox && certification.image" 
                 class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
                 @click="closeLightbox"
             >

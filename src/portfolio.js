@@ -144,6 +144,16 @@ const certifications = [
         verifyLink: "",
         skills: ["Data Science", "SAP Analytics Cloud", "SAP Build Apps"]
     },
+    {
+        title: "Junior Web Developer",
+        issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+        issueDate: "Dec 2023",
+        expiryDate: "Dec 2026",
+        credentialId: "62090 2513 3 0074669",
+        image: "",
+        verifyLink: "https://drive.google.com/file/d/1F7LEL1Ak0e62h0PlVebK10BtmZwPpAzX/view",
+        skills: ["Web Development", "HTML", "CSS", "JavaScript", "PHP" ]
+    },
 
 ]
 
