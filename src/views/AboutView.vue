@@ -33,6 +33,7 @@
 <script setup>
 import { ref } from 'vue';
 import { onIntersect } from '../composables/onIntersect'
+import { getImageUrl } from '../utils/imageUrl'
 
 const props = defineProps({
     content: Object,
@@ -41,10 +42,4 @@ const props = defineProps({
 
 const aboutSection = ref({})
 const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? onIntersect(aboutSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
-
-// Static Images
-let getImageUrl = (path) => {
-  return new URL(`../assets/${path}`, import.meta.url).href
-}
-
 </script>

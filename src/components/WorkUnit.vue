@@ -40,9 +40,11 @@
         </div>
     </div>
 </template>
+
 <script setup>
-import {ref} from 'vue'
+import { ref } from 'vue'
 import { LinkIcon, ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/solid';
+import { getImageUrl } from '../utils/imageUrl';
 
 const props = defineProps({
     project: Object
@@ -50,9 +52,4 @@ const props = defineProps({
 
 // Static Images
 const showProject = ref(false)
-
-let getImageUrl = (path) => {
-  return new URL(`../assets/${path}`, import.meta.url).href
-}
-
 </script>

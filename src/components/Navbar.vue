@@ -119,6 +119,7 @@ import { Bars2Icon, XMarkIcon, MoonIcon, SunIcon } from '@heroicons/vue/24/solid
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import NavTransition from './transitions/NavTransition.vue';
 import portfolio from '../portfolio'
+import { getImageUrl } from '../utils/imageUrl'
 
 const dropDownActive = ref(false)
 const showNavbar = ref(true)
@@ -156,10 +157,4 @@ let onScroll = () => {
     prevScrollPosition.value = currScrollPosition
     dropDownActive.value = false
 }
-
-// Static Images
-let getImageUrl = (path) => {
-  return new URL(`../assets/${path}`, import.meta.url).href
-}
-
 </script>

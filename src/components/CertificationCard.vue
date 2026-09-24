@@ -73,6 +73,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { getImageUrl } from '../utils/imageUrl'
 
 const props = defineProps({
     certification: Object
@@ -86,11 +87,6 @@ const openImage = () => {
 
 const closeLightbox = () => {
     showLightbox.value = false
-}
-
-// Static Images
-const getImageUrl = (path) => {
-    return new URL(`../assets/${path}`, import.meta.url).href
 }
 </script>
 

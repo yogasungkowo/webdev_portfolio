@@ -16,6 +16,8 @@
 <script setup>
 import { ref } from 'vue';
 
+import { getImageUrl } from '../utils/imageUrl';
+
 const props = defineProps({
     content: Object,
     showTransition: Boolean
@@ -23,8 +25,4 @@ const props = defineProps({
 
 // Static Images
 const showIntro = ref(false)
-
-let getImageUrl = (path) => {
-  return new URL(`../assets/${path}`, import.meta.url).href
-}
 </script>

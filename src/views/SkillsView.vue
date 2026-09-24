@@ -40,6 +40,8 @@ import { ref } from 'vue'
 import { onIntersect } from '../composables/onIntersect'
 import TechIcon from '../components/TechIcon.vue'
 
+import { getImageUrl } from '../utils/imageUrl'
+
 const props = defineProps({
     content: Array,
     transitions: Object
@@ -47,11 +49,6 @@ const props = defineProps({
 
 const skillsSection = ref({})
 const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? onIntersect(skillsSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
-
-// Static Images
-let getImageUrl = (path) => {
-    return new URL(`../assets/${path}`, import.meta.url).href
-}
 </script>
 
 <style scoped>
