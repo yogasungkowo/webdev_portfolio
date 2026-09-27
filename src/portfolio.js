@@ -62,6 +62,57 @@ const about = {
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
+        position: "Junior Programmer",
+        company: {
+            name: "Dinas Kominfostan Deli Serdang",
+            link: "https://dinaskominfostan-ds.deliserdangkab.go.id/"
+        },
+        duration: "Mar 2026 - Present",
+        content: [
+            {
+                sectionHeader: "",
+                bulletPoints: [
+                    "Developing and maintaining official government web applications, public service portals, and internal management systems for Deli Serdang Regency.",
+                    "Collaborating with cross-functional teams to build reliable, secure, and scalable solutions using Laravel, PostgreSQL, MariaDB, and modern frontend frameworks.",
+                ]
+            }
+        ],
+        hashtags: [
+            "Laravel",
+            "PHP",
+            "PostgreSQL",
+            "MariaDB",
+            "JavaScript",
+            "Bootstrap",
+            "Tailwind CSS"
+        ]
+    },
+    {
+        position: "Web Programmer",
+        company: {
+            name: "Balai Besar POM di Medan",
+            link: "https://medan.pom.go.id/"
+        },
+        duration: "Dec 2025 - Mar 2026",
+        content: [
+            {
+                sectionHeader: "",
+                bulletPoints: [
+                    "Developed and maintained web applications to streamline internal administrative workflows and public service information.",
+                    "Collaborated with cross-functional divisions to ensure data integrity, system performance, and responsive interfaces.",
+                ]
+            }
+        ],
+        hashtags: [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "JavaScript",
+            "Bootstrap",
+            "Tailwind CSS"
+        ]
+    },
+    {
         position: "Software Engineer",
         company: {
             name: "PT Perkebunan Nusantara IV",
@@ -219,6 +270,93 @@ const organisations = [
 // --- 💻 Work Section ---
 const works = [
     {
+        projectName: "Kominfo Deli Serdang Project Management",
+        yearCompleted: "2026",
+        description: "Developed an internal project management system for Dinas Kominfostan Kabupaten Deli Serdang to organize, monitor, and track project lifecycles, task assignments, and progress updates across regional digital initiatives.",
+        techStack: "PHP (Laravel), Metronic Template, Bootstrap, PostgreSQL",
+        links: [
+             {
+                label: "",
+                type: "external",
+                url: "https://pm.deliserdangkab.go.id/"
+            },
+        ],
+        imageLink: "images/project-management-kominfo.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Kabupaten Deli Serdang Official Website",
+        yearCompleted: "2026",
+        description: "Developed the official web portal for the Deli Serdang Regency Government, delivering public information, regional news, government transparency, and integrated public services for the community.",
+        techStack: "PHP (Laravel), JavaScript, PostgreSQL, Tailwind CSS",
+        links: [
+            {
+                label: "",
+                type: "external",
+                url: "https://deliserdangkab.go.id/"
+            },
+        ],
+        imageLink: "images/web-deliserdang.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Bapenda Deli Serdang Official Website",
+        yearCompleted: "2026",
+        description: "Developed the official website for the Regional Revenue Agency (BAPENDA) of Deli Serdang Regency to facilitate regional tax information, revenue transparency, regulatory updates, and public services.",
+        techStack: "PHP (Laravel), JavaScript, PostgreSQL, Tailwind CSS",
+        links: [
+            {
+                label: "",
+                type: "external",
+                url: "https://bapenda-ds.deliserdangkab.go.id/"
+            },
+        ],
+        imageLink: "images/web-bapenda.png",
+        alignLeft: false
+    },
+    {
+        projectName: "SAPA DELI - Disdukcapil Deli Serdang",
+        yearCompleted: "2026",
+        description: "Built SAPA DELI (Sistem Administrasi dan Pelayanan Adminduk Deli Serdang) for the Department of Population and Civil Registration, digitizing civil registry and administrative services with a fast, transparent, and integrated online system.",
+        techStack: "PHP (Laravel), JavaScript, MariaDB, Tailwind CSS",
+        links: [
+            {
+                label: "",
+                type: "external",
+                url: "https://salakdeli.deliserdangkab.go.id/"
+            },
+        ],
+        imageLink: "images/sapa-deli.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Bestari - Attendance System BBPOM di Medan",
+        yearCompleted: "2026",
+        description: "Developed an intern attendance monitoring system for Balai Besar POM di Medan to track daily presence, work-from-office (WFO), and work-from-home (WFH) activities efficiently.",
+        techStack: "PHP (CodeIgniter 3), MySQL, Bootstrap 5",
+        links: [],
+        imageLink: "images/bestari.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Andaliman - Pendampingan UMKM BBPOM di Medan",
+        yearCompleted: "2026",
+        description: "Developed Andaliman, an assistance and technical guidance platform for MSMEs (UMKM) to streamline consultation and product registration at Balai Besar POM di Medan.",
+        techStack: "PHP (CodeIgniter 3), MySQL, Tailwind CSS",
+        links: [],
+        imageLink: "images/andaliman.png",
+        alignLeft: true
+    },
+    {
+        projectName: "SI-Panggoaran BBPOM di Medan",
+        yearCompleted: "2026",
+        description: "Built SI-Panggoaran (Sistem Pelaporan Magang Orientasi dan Kunjungan), an informational portal and application system for internship, research, and PKPA applicants at Balai Besar POM di Medan.",
+        techStack: "PHP (CodeIgniter 3), MySQL, Tailwind CSS",
+        links: [],
+        imageLink: "images/sipanggoaran.png",
+        alignLeft: false
+    },
+    {
         projectName: "PalmViews Analytics Dashboard",
         yearCompleted: "2024",
         description: "Built PalmViews analytics dashboard for palm oil management, providing real-time insights on yield, resources, and environmental data. Integrated interactive visualizations using Highcharts.js to support data-driven decisions.",
@@ -231,7 +369,7 @@ const works = [
             },
         ],
         imageLink: "images/palmvies.png",
-        alignLeft: false
+        alignLeft: true
     },
     {
         projectName: "Palmprotection Analytics Dashboard",
@@ -246,7 +384,7 @@ const works = [
             },
         ],
         imageLink: "images/palmprotection.png",
-        alignLeft: true
+        alignLeft: false
     },
     {
         projectName: "3R Ponsel Kasirku System",
@@ -261,7 +399,7 @@ const works = [
             },
         ],
         imageLink: "images/3rponsel.png",
-        alignLeft: false
+        alignLeft: true
     },
     {
         projectName: "Pokdarwis Landing Page",
@@ -276,7 +414,7 @@ const works = [
             },
         ],
         imageLink: "images/pokdarwis.png",
-        alignLeft: true
+        alignLeft: false
     },
     {
         projectName: "Rumah Literasi Ranggi Website",
@@ -291,7 +429,7 @@ const works = [
             },
         ],
         imageLink: "images/rumahliterasiranggi.png",
-        alignLeft: false
+        alignLeft: true
     },
 ]
 
