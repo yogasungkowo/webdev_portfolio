@@ -19,7 +19,7 @@ jobs:
           node-version: '24' # Sesuaikan dengan versi Node.js yang Anda gunakan
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build Application
         run: npm run build
